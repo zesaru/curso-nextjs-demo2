@@ -1,5 +1,7 @@
+import { AppProps } from 'next/app';
 import { NextPage } from 'next';
 import { ReactElement, ReactNode } from 'react';
+
 import '../styles/globals.css'
 
 type NextPageWithLayout = NextPage & {
@@ -7,7 +9,7 @@ type NextPageWithLayout = NextPage & {
 }
 
 type AppPropsWithLayout = AppProps & {
-  Component: NextPageWithLayout;
+  Component: NextPageWithLayout
 }
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
